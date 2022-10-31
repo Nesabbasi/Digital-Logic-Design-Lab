@@ -1,0 +1,28 @@
+# Current time Sat May 28 14:48:10 2022
+# ModelSim - Intel FPGA Edition Stack Trace
+# Program = vsim
+# Id = "2020.1"
+# Version = "2020.02"
+# Date = "Feb 28 2020"
+# Platform = win32pe
+# Signature = 4a3706afe29a2b87def93ebd4f2693fa
+# 0    0x00f5688a: '<unknown (@0xf5688a)>'
+# 1    0xff08840f: '$MODEL_TECH/../altera/verilog/src/cycloneive_atoms.v:4265'
+# 2    0xff08840f: '$MODEL_TECH/../altera/verilog/src/cycloneive_atoms.v:4265'
+# 3    0x0105ec74: '<unknown (@0x105ec74)>'
+# 4    0x00499020: '<unknown (@0x499020)>'
+# End of Stack Trace
+
+
+# Current time Sat May 28 16:47:35 2022
+# ModelSim - Intel FPGA Edition Stack Trace
+# Program = vsim
+# Id = "2020.1"
+# Version = "2020.02"
+# Date = "Feb 28 2020"
+# Platform = win32pe
+# Signature = 4a3706afe29a2b87def93ebd4f2693fa
+# 0    0x00448c38: '<unknown (@0x448c38)>'
+# End of Stack Trace
+
+

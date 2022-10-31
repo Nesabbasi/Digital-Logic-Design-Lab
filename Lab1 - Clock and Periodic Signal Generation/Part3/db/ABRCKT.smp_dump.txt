@@ -1,0 +1,15 @@
+
+State Machine - |ABRCKT|Controller:UARTController|ps
+Name ps.End ps.U8 ps.U7 ps.U6 ps.U5 ps.U4 ps.U3 ps.U2 ps.U1 ps.Start ps.Init ps.Idle 
+ps.Idle 0 0 0 0 0 0 0 0 0 0 0 0 
+ps.Init 0 0 0 0 0 0 0 0 0 0 1 1 
+ps.Start 0 0 0 0 0 0 0 0 0 1 0 1 
+ps.U1 0 0 0 0 0 0 0 0 1 0 0 1 
+ps.U2 0 0 0 0 0 0 0 1 0 0 0 1 
+ps.U3 0 0 0 0 0 0 1 0 0 0 0 1 
+ps.U4 0 0 0 0 0 1 0 0 0 0 0 1 
+ps.U5 0 0 0 0 1 0 0 0 0 0 0 1 
+ps.U6 0 0 0 1 0 0 0 0 0 0 0 1 
+ps.U7 0 0 1 0 0 0 0 0 0 0 0 1 
+ps.U8 0 1 0 0 0 0 0 0 0 0 0 1 
+ps.End 1 0 0 0 0 0 0 0 0 0 0 1 

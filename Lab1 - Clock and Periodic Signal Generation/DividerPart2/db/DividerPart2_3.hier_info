@@ -1,0 +1,82 @@
+|DividerPart2_3
+out1 <= 74193:Counter1.QA
+input4 => 74193:Counter1.D
+input3 => 74193:Counter1.C
+input2 => 74193:Counter1.B
+input1 => 74193:Counter1.A
+UP => 74193:Counter1.UP
+DN => 74193:Counter1.DN
+DN => 74193:Counter2.DN
+input8 => 74193:Counter2.D
+input7 => 74193:Counter2.C
+input6 => 74193:Counter2.B
+input5 => 74193:Counter2.A
+preset => 7408:AND.2
+out2 <= 74193:Counter1.QB
+out3 <= 74193:Counter1.QC
+out4 <= 74193:Counter1.QD
+out5 <= 74193:Counter2.QA
+out6 <= 74193:Counter2.QB
+out7 <= 74193:Counter2.QC
+out8 <= 74193:Counter2.QD
+out <= 7476:TFlipFlop.1Q
+outCo <= 74193:Counter2.CON
+
+
+|DividerPart2_3|74193:Counter1
+BON <= 28.DB_MAX_OUTPUT_PORT_TYPE
+CLR => 44.IN0
+LDN => 43.IN0
+B => 53.IN2
+A => 52.IN2
+DN => 90.IN0
+UP => 89.IN0
+C => 54.IN2
+D => 55.IN2
+CON <= 27.DB_MAX_OUTPUT_PORT_TYPE
+QD <= 23.DB_MAX_OUTPUT_PORT_TYPE
+QC <= 24.DB_MAX_OUTPUT_PORT_TYPE
+QB <= 25.DB_MAX_OUTPUT_PORT_TYPE
+QA <= 26.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DividerPart2_3|7408:AND
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|DividerPart2_3|74193:Counter2
+BON <= 28.DB_MAX_OUTPUT_PORT_TYPE
+CLR => 44.IN0
+LDN => 43.IN0
+B => 53.IN2
+A => 52.IN2
+DN => 90.IN0
+UP => 89.IN0
+C => 54.IN2
+D => 55.IN2
+CON <= 27.DB_MAX_OUTPUT_PORT_TYPE
+QD <= 23.DB_MAX_OUTPUT_PORT_TYPE
+QC <= 24.DB_MAX_OUTPUT_PORT_TYPE
+QB <= 25.DB_MAX_OUTPUT_PORT_TYPE
+QA <= 26.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DividerPart2_3|7476:TFlipFlop
+2QN <= 5.DB_MAX_OUTPUT_PORT_TYPE
+2PRN => 7.PRESET
+2CLRN => 7.ACLR
+2K => 7.IN0
+2J => 7.IN1
+2CLK => 7.CLK
+2Q <= 7.DB_MAX_OUTPUT_PORT_TYPE
+1QN <= 6.DB_MAX_OUTPUT_PORT_TYPE
+1PRN => 8.PRESET
+1CLRN => 8.ACLR
+1K => 8.IN0
+1J => 8.IN1
+1CLK => 8.CLK
+1Q <= 8.DB_MAX_OUTPUT_PORT_TYPE
+
+

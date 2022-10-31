@@ -1,0 +1,763 @@
+// Copyright (C) 2020  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and any partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details, at
+// https://fpgasoftware.intel.com/eula.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus Prime"
+// VERSION "Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition"
+
+// DATE "04/20/2022 23:34:12"
+
+// 
+// Device: Altera EP4CE6E22C6 Package TQFP144
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module ABRCKT (
+	clk,
+	ABAUD,
+	UxRX,
+	UxRXIF,
+	out);
+input 	clk;
+input 	ABAUD;
+input 	UxRX;
+output 	UxRXIF;
+output 	[7:0] out;
+
+// Design Ports Information
+// UxRXIF	=>  Location: PIN_1,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// out[0]	=>  Location: PIN_114,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// out[1]	=>  Location: PIN_72,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// out[2]	=>  Location: PIN_54,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// out[3]	=>  Location: PIN_138,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// out[4]	=>  Location: PIN_67,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// out[5]	=>  Location: PIN_86,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// out[6]	=>  Location: PIN_43,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// out[7]	=>  Location: PIN_125,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// UxRX	=>  Location: PIN_2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// clk	=>  Location: PIN_23,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ABAUD	=>  Location: PIN_3,	 I/O Standard: 2.5 V,	 Current Strength: Default
+
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+// synopsys translate_off
+initial $sdf_annotate("ABRCKT_6_1200mv_85c_v_slow.sdo");
+// synopsys translate_on
+
+wire \UxRXIF~output_o ;
+wire \out[0]~output_o ;
+wire \out[1]~output_o ;
+wire \out[2]~output_o ;
+wire \out[3]~output_o ;
+wire \out[4]~output_o ;
+wire \out[5]~output_o ;
+wire \out[6]~output_o ;
+wire \out[7]~output_o ;
+wire \clk~input_o ;
+wire \clk~inputclkctrl_outclk ;
+wire \UxRX~input_o ;
+wire \ABAUD~input_o ;
+wire \UARTController|Selector0~0_combout ;
+wire \UARTController|ps.Idle~q ;
+wire \UARTController|Selector1~0_combout ;
+wire \UARTController|ps.Init~q ;
+wire \UARTController|Selector2~0_combout ;
+wire \UARTController|ps.Start~q ;
+wire \UARTController|Selector3~0_combout ;
+wire \UARTController|ps.U1~q ;
+wire \UARTController|Selector4~0_combout ;
+wire \UARTController|ps.U2~q ;
+wire \UARTController|Selector5~0_combout ;
+wire \UARTController|ps.U3~q ;
+wire \UARTController|Selector6~0_combout ;
+wire \UARTController|ps.U4~q ;
+wire \UARTController|Selector7~0_combout ;
+wire \UARTController|ps.U5~q ;
+wire \UARTController|Selector8~0_combout ;
+wire \UARTController|ps.U6~q ;
+wire \UARTController|Selector9~0_combout ;
+wire \UARTController|ps.U7~q ;
+wire \UARTController|Selector10~0_combout ;
+wire \UARTController|ps.U8~q ;
+wire \UARTController|ns.End~0_combout ;
+wire \UARTController|ps.End~q ;
+
+
+hard_block auto_generated_inst(
+	.devpor(devpor),
+	.devclrn(devclrn),
+	.devoe(devoe));
+
+// Location: IOOBUF_X0_Y23_N2
+cycloneive_io_obuf \UxRXIF~output (
+	.i(\UARTController|ps.End~q ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\UxRXIF~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \UxRXIF~output .bus_hold = "false";
+defparam \UxRXIF~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X28_Y24_N16
+cycloneive_io_obuf \out[0]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\out[0]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \out[0]~output .bus_hold = "false";
+defparam \out[0]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X32_Y0_N9
+cycloneive_io_obuf \out[1]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\out[1]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \out[1]~output .bus_hold = "false";
+defparam \out[1]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X18_Y0_N23
+cycloneive_io_obuf \out[2]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\out[2]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \out[2]~output .bus_hold = "false";
+defparam \out[2]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X7_Y24_N9
+cycloneive_io_obuf \out[3]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\out[3]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \out[3]~output .bus_hold = "false";
+defparam \out[3]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X30_Y0_N23
+cycloneive_io_obuf \out[4]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\out[4]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \out[4]~output .bus_hold = "false";
+defparam \out[4]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X34_Y9_N2
+cycloneive_io_obuf \out[5]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\out[5]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \out[5]~output .bus_hold = "false";
+defparam \out[5]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X5_Y0_N23
+cycloneive_io_obuf \out[6]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\out[6]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \out[6]~output .bus_hold = "false";
+defparam \out[6]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X18_Y24_N23
+cycloneive_io_obuf \out[7]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\out[7]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \out[7]~output .bus_hold = "false";
+defparam \out[7]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y11_N8
+cycloneive_io_ibuf \clk~input (
+	.i(clk),
+	.ibar(gnd),
+	.o(\clk~input_o ));
+// synopsys translate_off
+defparam \clk~input .bus_hold = "false";
+defparam \clk~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: CLKCTRL_G2
+cycloneive_clkctrl \clk~inputclkctrl (
+	.ena(vcc),
+	.inclk({vcc,vcc,vcc,\clk~input_o }),
+	.clkselect(2'b00),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.outclk(\clk~inputclkctrl_outclk ));
+// synopsys translate_off
+defparam \clk~inputclkctrl .clock_type = "global clock";
+defparam \clk~inputclkctrl .ena_register_mode = "none";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y23_N8
+cycloneive_io_ibuf \UxRX~input (
+	.i(UxRX),
+	.ibar(gnd),
+	.o(\UxRX~input_o ));
+// synopsys translate_off
+defparam \UxRX~input .bus_hold = "false";
+defparam \UxRX~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y23_N15
+cycloneive_io_ibuf \ABAUD~input (
+	.i(ABAUD),
+	.ibar(gnd),
+	.o(\ABAUD~input_o ));
+// synopsys translate_off
+defparam \ABAUD~input .bus_hold = "false";
+defparam \ABAUD~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: LCCOMB_X1_Y23_N30
+cycloneive_lcell_comb \UARTController|Selector0~0 (
+// Equation(s):
+// \UARTController|Selector0~0_combout  = (!\UARTController|ps.End~q  & ((\ABAUD~input_o ) # (\UARTController|ps.Idle~q )))
+
+	.dataa(\ABAUD~input_o ),
+	.datab(gnd),
+	.datac(\UARTController|ps.Idle~q ),
+	.datad(\UARTController|ps.End~q ),
+	.cin(gnd),
+	.combout(\UARTController|Selector0~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \UARTController|Selector0~0 .lut_mask = 16'h00FA;
+defparam \UARTController|Selector0~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X1_Y23_N31
+dffeas \UARTController|ps.Idle (
+	.clk(\clk~inputclkctrl_outclk ),
+	.d(\UARTController|Selector0~0_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\UARTController|ps.Idle~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \UARTController|ps.Idle .is_wysiwyg = "true";
+defparam \UARTController|ps.Idle .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X1_Y23_N16
+cycloneive_lcell_comb \UARTController|Selector1~0 (
+// Equation(s):
+// \UARTController|Selector1~0_combout  = (\ABAUD~input_o  & (((\UxRX~input_o  & \UARTController|ps.Init~q )) # (!\UARTController|ps.Idle~q ))) # (!\ABAUD~input_o  & (\UxRX~input_o  & (\UARTController|ps.Init~q )))
+
+	.dataa(\ABAUD~input_o ),
+	.datab(\UxRX~input_o ),
+	.datac(\UARTController|ps.Init~q ),
+	.datad(\UARTController|ps.Idle~q ),
+	.cin(gnd),
+	.combout(\UARTController|Selector1~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \UARTController|Selector1~0 .lut_mask = 16'hC0EA;
+defparam \UARTController|Selector1~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X1_Y23_N17
+dffeas \UARTController|ps.Init (
+	.clk(\clk~inputclkctrl_outclk ),
+	.d(\UARTController|Selector1~0_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\UARTController|ps.Init~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \UARTController|ps.Init .is_wysiwyg = "true";
+defparam \UARTController|ps.Init .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X1_Y23_N2
+cycloneive_lcell_comb \UARTController|Selector2~0 (
+// Equation(s):
+// \UARTController|Selector2~0_combout  = (!\UxRX~input_o  & ((\UARTController|ps.Start~q ) # (\UARTController|ps.Init~q )))
+
+	.dataa(\UxRX~input_o ),
+	.datab(gnd),
+	.datac(\UARTController|ps.Start~q ),
+	.datad(\UARTController|ps.Init~q ),
+	.cin(gnd),
+	.combout(\UARTController|Selector2~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \UARTController|Selector2~0 .lut_mask = 16'h5550;
+defparam \UARTController|Selector2~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X1_Y23_N3
+dffeas \UARTController|ps.Start (
+	.clk(\clk~inputclkctrl_outclk ),
+	.d(\UARTController|Selector2~0_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\UARTController|ps.Start~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \UARTController|ps.Start .is_wysiwyg = "true";
+defparam \UARTController|ps.Start .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X1_Y23_N0
+cycloneive_lcell_comb \UARTController|Selector3~0 (
+// Equation(s):
+// \UARTController|Selector3~0_combout  = (\UxRX~input_o  & ((\UARTController|ps.U1~q ) # (\UARTController|ps.Start~q )))
+
+	.dataa(\UxRX~input_o ),
+	.datab(gnd),
+	.datac(\UARTController|ps.U1~q ),
+	.datad(\UARTController|ps.Start~q ),
+	.cin(gnd),
+	.combout(\UARTController|Selector3~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \UARTController|Selector3~0 .lut_mask = 16'hAAA0;
+defparam \UARTController|Selector3~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X1_Y23_N1
+dffeas \UARTController|ps.U1 (
+	.clk(\clk~inputclkctrl_outclk ),
+	.d(\UARTController|Selector3~0_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\UARTController|ps.U1~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \UARTController|ps.U1 .is_wysiwyg = "true";
+defparam \UARTController|ps.U1 .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X1_Y23_N6
+cycloneive_lcell_comb \UARTController|Selector4~0 (
+// Equation(s):
+// \UARTController|Selector4~0_combout  = (!\UxRX~input_o  & ((\UARTController|ps.U2~q ) # (\UARTController|ps.U1~q )))
+
+	.dataa(\UxRX~input_o ),
+	.datab(gnd),
+	.datac(\UARTController|ps.U2~q ),
+	.datad(\UARTController|ps.U1~q ),
+	.cin(gnd),
+	.combout(\UARTController|Selector4~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \UARTController|Selector4~0 .lut_mask = 16'h5550;
+defparam \UARTController|Selector4~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X1_Y23_N7
+dffeas \UARTController|ps.U2 (
+	.clk(\clk~inputclkctrl_outclk ),
+	.d(\UARTController|Selector4~0_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\UARTController|ps.U2~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \UARTController|ps.U2 .is_wysiwyg = "true";
+defparam \UARTController|ps.U2 .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X1_Y23_N28
+cycloneive_lcell_comb \UARTController|Selector5~0 (
+// Equation(s):
+// \UARTController|Selector5~0_combout  = (\UxRX~input_o  & ((\UARTController|ps.U3~q ) # (\UARTController|ps.U2~q )))
+
+	.dataa(\UxRX~input_o ),
+	.datab(gnd),
+	.datac(\UARTController|ps.U3~q ),
+	.datad(\UARTController|ps.U2~q ),
+	.cin(gnd),
+	.combout(\UARTController|Selector5~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \UARTController|Selector5~0 .lut_mask = 16'hAAA0;
+defparam \UARTController|Selector5~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X1_Y23_N29
+dffeas \UARTController|ps.U3 (
+	.clk(\clk~inputclkctrl_outclk ),
+	.d(\UARTController|Selector5~0_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\UARTController|ps.U3~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \UARTController|ps.U3 .is_wysiwyg = "true";
+defparam \UARTController|ps.U3 .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X1_Y23_N18
+cycloneive_lcell_comb \UARTController|Selector6~0 (
+// Equation(s):
+// \UARTController|Selector6~0_combout  = (!\UxRX~input_o  & ((\UARTController|ps.U4~q ) # (\UARTController|ps.U3~q )))
+
+	.dataa(\UxRX~input_o ),
+	.datab(gnd),
+	.datac(\UARTController|ps.U4~q ),
+	.datad(\UARTController|ps.U3~q ),
+	.cin(gnd),
+	.combout(\UARTController|Selector6~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \UARTController|Selector6~0 .lut_mask = 16'h5550;
+defparam \UARTController|Selector6~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X1_Y23_N19
+dffeas \UARTController|ps.U4 (
+	.clk(\clk~inputclkctrl_outclk ),
+	.d(\UARTController|Selector6~0_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\UARTController|ps.U4~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \UARTController|ps.U4 .is_wysiwyg = "true";
+defparam \UARTController|ps.U4 .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X1_Y23_N24
+cycloneive_lcell_comb \UARTController|Selector7~0 (
+// Equation(s):
+// \UARTController|Selector7~0_combout  = (\UxRX~input_o  & ((\UARTController|ps.U5~q ) # (\UARTController|ps.U4~q )))
+
+	.dataa(\UxRX~input_o ),
+	.datab(gnd),
+	.datac(\UARTController|ps.U5~q ),
+	.datad(\UARTController|ps.U4~q ),
+	.cin(gnd),
+	.combout(\UARTController|Selector7~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \UARTController|Selector7~0 .lut_mask = 16'hAAA0;
+defparam \UARTController|Selector7~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X1_Y23_N25
+dffeas \UARTController|ps.U5 (
+	.clk(\clk~inputclkctrl_outclk ),
+	.d(\UARTController|Selector7~0_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\UARTController|ps.U5~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \UARTController|ps.U5 .is_wysiwyg = "true";
+defparam \UARTController|ps.U5 .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X1_Y23_N10
+cycloneive_lcell_comb \UARTController|Selector8~0 (
+// Equation(s):
+// \UARTController|Selector8~0_combout  = (!\UxRX~input_o  & ((\UARTController|ps.U6~q ) # (\UARTController|ps.U5~q )))
+
+	.dataa(\UxRX~input_o ),
+	.datab(gnd),
+	.datac(\UARTController|ps.U6~q ),
+	.datad(\UARTController|ps.U5~q ),
+	.cin(gnd),
+	.combout(\UARTController|Selector8~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \UARTController|Selector8~0 .lut_mask = 16'h5550;
+defparam \UARTController|Selector8~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X1_Y23_N11
+dffeas \UARTController|ps.U6 (
+	.clk(\clk~inputclkctrl_outclk ),
+	.d(\UARTController|Selector8~0_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\UARTController|ps.U6~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \UARTController|ps.U6 .is_wysiwyg = "true";
+defparam \UARTController|ps.U6 .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X1_Y23_N12
+cycloneive_lcell_comb \UARTController|Selector9~0 (
+// Equation(s):
+// \UARTController|Selector9~0_combout  = (\UxRX~input_o  & ((\UARTController|ps.U7~q ) # (\UARTController|ps.U6~q )))
+
+	.dataa(\UxRX~input_o ),
+	.datab(gnd),
+	.datac(\UARTController|ps.U7~q ),
+	.datad(\UARTController|ps.U6~q ),
+	.cin(gnd),
+	.combout(\UARTController|Selector9~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \UARTController|Selector9~0 .lut_mask = 16'hAAA0;
+defparam \UARTController|Selector9~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X1_Y23_N13
+dffeas \UARTController|ps.U7 (
+	.clk(\clk~inputclkctrl_outclk ),
+	.d(\UARTController|Selector9~0_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\UARTController|ps.U7~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \UARTController|ps.U7 .is_wysiwyg = "true";
+defparam \UARTController|ps.U7 .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X1_Y23_N26
+cycloneive_lcell_comb \UARTController|Selector10~0 (
+// Equation(s):
+// \UARTController|Selector10~0_combout  = (!\UxRX~input_o  & ((\UARTController|ps.U8~q ) # (\UARTController|ps.U7~q )))
+
+	.dataa(\UxRX~input_o ),
+	.datab(gnd),
+	.datac(\UARTController|ps.U8~q ),
+	.datad(\UARTController|ps.U7~q ),
+	.cin(gnd),
+	.combout(\UARTController|Selector10~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \UARTController|Selector10~0 .lut_mask = 16'h5550;
+defparam \UARTController|Selector10~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X1_Y23_N27
+dffeas \UARTController|ps.U8 (
+	.clk(\clk~inputclkctrl_outclk ),
+	.d(\UARTController|Selector10~0_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\UARTController|ps.U8~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \UARTController|ps.U8 .is_wysiwyg = "true";
+defparam \UARTController|ps.U8 .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X1_Y23_N20
+cycloneive_lcell_comb \UARTController|ns.End~0 (
+// Equation(s):
+// \UARTController|ns.End~0_combout  = (\UxRX~input_o  & \UARTController|ps.U8~q )
+
+	.dataa(\UxRX~input_o ),
+	.datab(gnd),
+	.datac(\UARTController|ps.U8~q ),
+	.datad(gnd),
+	.cin(gnd),
+	.combout(\UARTController|ns.End~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \UARTController|ns.End~0 .lut_mask = 16'hA0A0;
+defparam \UARTController|ns.End~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X1_Y23_N21
+dffeas \UARTController|ps.End (
+	.clk(\clk~inputclkctrl_outclk ),
+	.d(\UARTController|ns.End~0_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\UARTController|ps.End~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \UARTController|ps.End .is_wysiwyg = "true";
+defparam \UARTController|ps.End .power_up = "low";
+// synopsys translate_on
+
+assign UxRXIF = \UxRXIF~output_o ;
+
+assign out[0] = \out[0]~output_o ;
+
+assign out[1] = \out[1]~output_o ;
+
+assign out[2] = \out[2]~output_o ;
+
+assign out[3] = \out[3]~output_o ;
+
+assign out[4] = \out[4]~output_o ;
+
+assign out[5] = \out[5]~output_o ;
+
+assign out[6] = \out[6]~output_o ;
+
+assign out[7] = \out[7]~output_o ;
+
+endmodule
+
+module hard_block (
+
+	devpor,
+	devclrn,
+	devoe);
+
+// Design Ports Information
+// ~ALTERA_ASDO_DATA1~	=>  Location: PIN_6,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_FLASH_nCE_nCSO~	=>  Location: PIN_8,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_DCLK~	=>  Location: PIN_12,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_DATA0~	=>  Location: PIN_13,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_nCEO~	=>  Location: PIN_101,	 I/O Standard: 2.5 V,	 Current Strength: 8mA
+
+input 	devpor;
+input 	devclrn;
+input 	devoe;
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+wire \~ALTERA_ASDO_DATA1~~padout ;
+wire \~ALTERA_FLASH_nCE_nCSO~~padout ;
+wire \~ALTERA_DATA0~~padout ;
+wire \~ALTERA_ASDO_DATA1~~ibuf_o ;
+wire \~ALTERA_FLASH_nCE_nCSO~~ibuf_o ;
+wire \~ALTERA_DATA0~~ibuf_o ;
+
+
+endmodule

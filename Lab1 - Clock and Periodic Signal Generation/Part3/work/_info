@@ -1,0 +1,153 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/DLDLAB/Project1/Part3
+vABRCKT
+Z1 !s110 1650481956
+!i10b 1
+!s100 cL:<]J_m9af77RAD1aabh1
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IKC_<ZeW:XPJ>nMh>2PakJ2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1650481474
+Z5 8D:/DLDLAB/Project1/Part3/simulation/modelsim/ABRCKT.vo
+Z6 FD:/DLDLAB/Project1/Part3/simulation/modelsim/ABRCKT.vo
+!i122 52
+L0 32 693
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1650481956.000000
+Z9 !s107 D:/DLDLAB/Project1/Part3/simulation/modelsim/ABRCKT.vo|
+Z10 !s90 -reportprogress|300|-work|work|-stats=none|D:/DLDLAB/Project1/Part3/simulation/modelsim/ABRCKT.vo|
+!i113 1
+Z11 o-work work
+Z12 tCvgOpt 0
+n@a@b@r@c@k@t
+vController
+Z13 !s110 1650481955
+!i10b 1
+!s100 jWbF5ghKao;41IMa=izGo3
+R2
+ISSb9z?99He2N[jE[0X1Oc3
+R3
+R0
+w1650471479
+8D:/DLDLAB/Project1/Part3/Controller.v
+FD:/DLDLAB/Project1/Part3/Controller.v
+!i122 50
+L0 2 60
+R7
+r1
+!s85 0
+31
+Z14 !s108 1650481955.000000
+!s107 D:/DLDLAB/Project1/Part3/Controller.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/DLDLAB/Project1/Part3/Controller.v|
+!i113 1
+R11
+R12
+n@controller
+vDataPath
+R13
+!i10b 1
+!s100 hL?[W;hjK^9DeaH<6m9IM0
+R2
+IFTNTWEOW_2U02O_4W1z8?1
+R3
+R0
+w1650477168
+Z15 8D:/DLDLAB/Project1/Part3/DataPath.v
+Z16 FD:/DLDLAB/Project1/Part3/DataPath.v
+!i122 49
+Z17 L0 2 23
+R7
+r1
+!s85 0
+31
+R14
+Z18 !s107 D:/DLDLAB/Project1/Part3/DataPath.v|
+Z19 !s90 -reportprogress|300|-work|work|-stats=none|D:/DLDLAB/Project1/Part3/DataPath.v|
+!i113 1
+R11
+R12
+n@data@path
+vDatPpath
+!s110 1650476877
+!i10b 1
+!s100 g00]SilW6[XQ:IPUa:h7[2
+R2
+InWBMT902YD0:j9AZUlFe;2
+R3
+R0
+w1650473256
+R15
+R16
+!i122 33
+R17
+R7
+r1
+!s85 0
+31
+!s108 1650476877.000000
+R18
+R19
+!i113 1
+R11
+R12
+n@dat@ppath
+vhard_block
+R1
+!i10b 1
+!s100 eXO<N1OWRFOT1zEU9;i0F0
+R2
+IZ>GU@kIlkOBoFTGl>>Qe40
+R3
+R0
+R4
+R5
+R6
+!i122 52
+L0 726 34
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+voscillator
+R1
+!i10b 1
+!s100 IBE^[nACbN4[Z`YneSWHl2
+R2
+I:CP4gEkBi9Cin::OL_90E3
+R3
+R0
+w1650109308
+8D:/DLDLAB/Project1/Oscillator.v
+FD:/DLDLAB/Project1/Oscillator.v
+!i122 53
+L0 2 14
+R7
+r1
+!s85 0
+31
+R8
+!s107 D:/DLDLAB/Project1/Oscillator.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/DLDLAB/Project1/Oscillator.v|
+!i113 1
+R11
+R12

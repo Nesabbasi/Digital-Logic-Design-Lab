@@ -1,0 +1,30 @@
+D:/DLDLAB/Project1/OscillatorTB.v {1 {vlog -work work -stats=none D:/DLDLAB/Project1/OscillatorTB.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module oscillatorTB
+
+Top level modules:
+	oscillatorTB
+
+} {} {}} D:/DLDLAB/Project1/DividerPart2/DividerPart2_3TB.v {1 {vlog -work work -stats=none D:/DLDLAB/Project1/DividerPart2/DividerPart2_3TB.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module DividerPart2_3TB
+
+Top level modules:
+	DividerPart2_3TB
+
+} {} {}} D:/DLDLAB/Project1/Oscillator.v {1 {vlog -work work -stats=none D:/DLDLAB/Project1/Oscillator.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module oscillator
+
+Top level modules:
+	oscillator
+
+} {} {}} D:/DLDLAB/Project1/DividerPart2/simulation/modelsim/DividerPart2_3.vo {1 {vlog -work work -stats=none D:/DLDLAB/Project1/DividerPart2/simulation/modelsim/DividerPart2_3.vo
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module DividerPart2_3
+-- Compiling module hard_block
+
+Top level modules:
+	DividerPart2_3
+
+} {} {}}

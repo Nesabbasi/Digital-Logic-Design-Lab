@@ -1,0 +1,25 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "UxRXIF",
+					"strict" : false
+				},
+				{
+					"name" : "UxRX",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "ABAUD",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

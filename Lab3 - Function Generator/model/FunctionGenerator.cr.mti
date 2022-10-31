@@ -1,0 +1,65 @@
+D:/DLDLAB/Ava_Nesa_DLDLAB3/model/Counter8bit.v {1 {vlog -work work -stats=none D:/DLDLAB/Ava_Nesa_DLDLAB3/model/Counter8bit.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Counter8Bit
+
+Top level modules:
+	Counter8Bit
+
+} {} {}} D:/DLDLAB/Ava_Nesa_DLDLAB3/model/FunctionGenerator.vo {1 {vlog -work work -stats=none D:/DLDLAB/Ava_Nesa_DLDLAB3/model/FunctionGenerator.vo
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module FunctionGenerator
+-- Compiling module hard_block
+
+Top level modules:
+	FunctionGenerator
+
+} {} {}} D:/DLDLAB/Ava_Nesa_DLDLAB3/model/Adder.v {1 {vlog -work work -stats=none D:/DLDLAB/Ava_Nesa_DLDLAB3/model/Adder.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Adder
+
+Top level modules:
+	Adder
+
+} {} {}} D:/DLDLAB/Ava_Nesa_DLDLAB3/model/WaveformGen.v {1 {vlog -work work -stats=none D:/DLDLAB/Ava_Nesa_DLDLAB3/model/WaveformGen.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module WaveformGen
+
+Top level modules:
+	WaveformGen
+
+} {} {}} D:/DLDLAB/Ava_Nesa_DLDLAB3/model/WaveformGenTestBench.v {1 {vlog -work work -stats=none D:/DLDLAB/Ava_Nesa_DLDLAB3/model/WaveformGenTestBench.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module waveformGenTestBench
+
+Top level modules:
+	waveformGenTestBench
+
+} {} {}} D:/DLDLAB/Ava_Nesa_DLDLAB3/model/Register.v {1 {vlog -work work -stats=none D:/DLDLAB/Ava_Nesa_DLDLAB3/model/Register.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Register8bit
+
+Top level modules:
+	Register8bit
+
+} {} {}} D:/DLDLAB/Ava_Nesa_DLDLAB3/model/Mux.v {1 {vlog -work work -stats=none D:/DLDLAB/Ava_Nesa_DLDLAB3/model/Mux.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Mux
+
+Top level modules:
+	Mux
+
+} {} {}} D:/DLDLAB/Ava_Nesa_DLDLAB3/model/AmplitudeSelector.v {1 {vlog -work work -stats=none D:/DLDLAB/Ava_Nesa_DLDLAB3/model/AmplitudeSelector.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module AmplitudeSelector
+
+Top level modules:
+	AmplitudeSelector
+
+} {} {}} D:/DLDLAB/Ava_Nesa_DLDLAB3/model/FunctionGenTB.v {1 {vlog -work work -stats=none {D:\DLDLAB\Ava_Nesa_DLDLAB3\model\FunctionGenTB.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module functionGenTB
+
+Top level modules:
+	functionGenTB
+
+} {} {}}

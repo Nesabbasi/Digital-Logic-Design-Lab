@@ -1,0 +1,372 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/20.1
+vAdder
+Z0 !s110 1653740614
+!i10b 1
+!s100 hz0mfi;aodEVEPe39U_]A0
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IFziahP6j11:Z8PkSJo<6N3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dD:/DLDLAB/Ava_Nesa_DLDLAB3/model
+w1653586482
+8D:/DLDLAB/Ava_Nesa_DLDLAB3/model/Adder.v
+FD:/DLDLAB/Ava_Nesa_DLDLAB3/model/Adder.v
+!i122 199
+Z4 L0 1 3
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1653740614.000000
+!s107 D:/DLDLAB/Ava_Nesa_DLDLAB3/model/Adder.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/DLDLAB/Ava_Nesa_DLDLAB3/model/Adder.v|
+!i113 1
+Z7 o-work work
+Z8 tCvgOpt 0
+n@adder
+vAmplitudeSelector
+R0
+!i10b 1
+!s100 S9@lz>K;d:<@GX]=D808[1
+R1
+I]Tno39L0i2::RYjQaS5[H3
+R2
+R3
+w1653592890
+8D:/DLDLAB/Ava_Nesa_DLDLAB3/model/AmplitudeSelector.v
+FD:/DLDLAB/Ava_Nesa_DLDLAB3/model/AmplitudeSelector.v
+!i122 200
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/DLDLAB/Ava_Nesa_DLDLAB3/model/AmplitudeSelector.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/DLDLAB/Ava_Nesa_DLDLAB3/model/AmplitudeSelector.v|
+!i113 1
+R7
+R8
+n@amplitude@selector
+vCounter12Bit
+Z9 !s110 1653400538
+!i10b 1
+!s100 MgHT4KaF2:kk`T5zd7gkJ1
+R1
+I16z<ihn^<@Z4m>gS2n`CT1
+R2
+Z10 dD:/ava/term4/FLAT/DLD/model
+w1653399496
+8D:/ava/term4/FLAT/DLD/model/Counter12Bit.v
+FD:/ava/term4/FLAT/DLD/model/Counter12Bit.v
+!i122 22
+Z11 L0 1 12
+R5
+r1
+!s85 0
+31
+!s108 1653400538.000000
+!s107 D:/ava/term4/FLAT/DLD/model/Counter12Bit.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/ava/term4/FLAT/DLD/model/Counter12Bit.v|
+!i113 1
+R7
+R8
+n@counter12@bit
+vCounter8Bit
+R0
+!i10b 1
+!s100 7]d:ZL9ha6N@5i0lRJeUP2
+R1
+IZ[fo9zWc=EegHeZo7^jB=0
+R2
+R3
+w1653671274
+8D:/DLDLAB/Ava_Nesa_DLDLAB3/model/Counter8bit.v
+FD:/DLDLAB/Ava_Nesa_DLDLAB3/model/Counter8bit.v
+!i122 201
+R11
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/DLDLAB/Ava_Nesa_DLDLAB3/model/Counter8bit.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/DLDLAB/Ava_Nesa_DLDLAB3/model/Counter8bit.v|
+!i113 1
+R7
+R8
+n@counter8@bit
+vCounterTB
+!s110 1653589637
+!i10b 1
+!s100 TS?]Z78P7RDm3lz_3>AC@2
+R1
+IC2^OY;4JM:mkZIV9R0B7L3
+R2
+R10
+w1653402469
+Z12 8D:/ava/term4/FLAT/DLD/model/CounterTB.v
+Z13 FD:/ava/term4/FLAT/DLD/model/CounterTB.v
+!i122 62
+L0 2 13
+R5
+r1
+!s85 0
+31
+!s108 1653589637.000000
+Z14 !s107 D:/ava/term4/FLAT/DLD/model/CounterTB.v|
+Z15 !s90 -reportprogress|300|-work|work|-stats=none|D:/ava/term4/FLAT/DLD/model/CounterTB.v|
+!i113 1
+R7
+R8
+n@counter@t@b
+XCounterTB_v_unit
+DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+!s110 1653400321
+V0i32G;5=:YW@kgUT39B551
+r1
+!s85 0
+!i10b 1
+!s100 ZX0fzfQQC4N7HCQ9Xo^[I3
+I0i32G;5=:YW@kgUT39B551
+!i103 1
+S1
+R10
+w1653400314
+R12
+R13
+!i122 18
+L0 1 0
+R5
+31
+!s108 1653400321.000000
+R14
+R15
+!i113 1
+R7
+R8
+n@counter@t@b_v_unit
+vDAC
+!s110 1653636798
+!i10b 1
+!s100 Nk=GM58ZigM;ZZB<[EGB22
+R1
+IE:ZTD[PIH^<5CXThnOmZ93
+R2
+R10
+w1653636788
+8D:/ava/term4/FLAT/DLD/model/DAC.v
+FD:/ava/term4/FLAT/DLD/model/DAC.v
+!i122 83
+L0 1 15
+R5
+r1
+!s85 0
+31
+!s108 1653636797.000000
+!s107 D:/ava/term4/FLAT/DLD/model/DAC.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/ava/term4/FLAT/DLD/model/DAC.v|
+!i113 1
+R7
+R8
+n@d@a@c
+vFunctionGenerator
+R0
+!i10b 1
+!s100 lmHU0b2>3Fm@^fOjnB`N43
+R1
+IPRJoo]ZTXFIUWZX2Oi?iB0
+R2
+R3
+Z16 w1653739377
+Z17 8D:/DLDLAB/Ava_Nesa_DLDLAB3/model/FunctionGenerator.vo
+Z18 FD:/DLDLAB/Ava_Nesa_DLDLAB3/model/FunctionGenerator.vo
+!i122 202
+L0 32 4420
+R5
+r1
+!s85 0
+31
+R6
+Z19 !s107 D:/DLDLAB/Ava_Nesa_DLDLAB3/model/FunctionGenerator.vo|
+Z20 !s90 -reportprogress|300|-work|work|-stats=none|D:/DLDLAB/Ava_Nesa_DLDLAB3/model/FunctionGenerator.vo|
+!i113 1
+R7
+R8
+n@function@generator
+vfunctionGenTB
+R0
+!i10b 1
+!s100 @57zHm6V<PKfVKDB3e:cT2
+R1
+I]hBi?e5UQfnk=oa<UMB4o0
+R2
+R3
+w1653740612
+8D:\DLDLAB\Ava_Nesa_DLDLAB3\model\FunctionGenTB.v
+FD:\DLDLAB\Ava_Nesa_DLDLAB3\model\FunctionGenTB.v
+!i122 203
+L0 2 24
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:\DLDLAB\Ava_Nesa_DLDLAB3\model\FunctionGenTB.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:\DLDLAB\Ava_Nesa_DLDLAB3\model\FunctionGenTB.v|
+!i113 1
+R7
+R8
+nfunction@gen@t@b
+vhard_block
+R0
+!i10b 1
+!s100 9S1kCdCa2;NdVJ6e1hE1n3
+R1
+IoB]42No9A9oemPz4]ij2c3
+R2
+R3
+R16
+R17
+R18
+!i122 202
+L0 4453 34
+R5
+r1
+!s85 0
+31
+R6
+R19
+R20
+!i113 1
+R7
+R8
+vMux
+Z21 !s110 1653740615
+!i10b 1
+!s100 V[TG_>fIT57GOlMVenWXm2
+R1
+IPjB7[aUf6IGFo4O1RT6`_3
+R2
+R3
+w1653586750
+8D:/DLDLAB/Ava_Nesa_DLDLAB3/model/Mux.v
+FD:/DLDLAB/Ava_Nesa_DLDLAB3/model/Mux.v
+!i122 204
+R4
+R5
+r1
+!s85 0
+31
+Z22 !s108 1653740615.000000
+!s107 D:/DLDLAB/Ava_Nesa_DLDLAB3/model/Mux.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/DLDLAB/Ava_Nesa_DLDLAB3/model/Mux.v|
+!i113 1
+R7
+R8
+n@mux
+vRegister8bit
+R21
+!i10b 1
+!s100 7DB]L2EbYJ`8VT1ifJ@=Y2
+R1
+I<_8>JfJnVd:a?X_fG87mo3
+R2
+R3
+w1653586600
+8D:/DLDLAB/Ava_Nesa_DLDLAB3/model/Register.v
+FD:/DLDLAB/Ava_Nesa_DLDLAB3/model/Register.v
+!i122 205
+L0 1 8
+R5
+r1
+!s85 0
+31
+R22
+!s107 D:/DLDLAB/Ava_Nesa_DLDLAB3/model/Register.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/DLDLAB/Ava_Nesa_DLDLAB3/model/Register.v|
+!i113 1
+R7
+R8
+n@register8bit
+vWaveformGen
+R21
+!i10b 1
+!s100 H3`>9eTdVX32Z3Y90YnNK1
+R1
+IW48]<d;KL4WnlB3C2He`R3
+R2
+R3
+w1653732700
+8D:/DLDLAB/Ava_Nesa_DLDLAB3/model/WaveformGen.v
+FD:/DLDLAB/Ava_Nesa_DLDLAB3/model/WaveformGen.v
+!i122 206
+L0 1 30
+R5
+r1
+!s85 0
+31
+R22
+!s107 D:/DLDLAB/Ava_Nesa_DLDLAB3/model/WaveformGen.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/DLDLAB/Ava_Nesa_DLDLAB3/model/WaveformGen.v|
+!i113 1
+R7
+R8
+n@waveform@gen
+vWaveformGenerator
+R9
+!i10b 1
+!s100 LU3fMEY88SmaM@E_5joa50
+R1
+Ie@DfHS5<n=oeI0SI:=>H51
+R2
+R10
+w1653158243
+8D:/ava/term4/FLAT/DLD/quartus/WaveformGenerator.v
+FD:/ava/term4/FLAT/DLD/quartus/WaveformGenerator.v
+!i122 20
+L0 20 26
+R5
+r1
+!s85 0
+31
+!s108 1653400537.000000
+!s107 D:/ava/term4/FLAT/DLD/quartus/WaveformGenerator.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/ava/term4/FLAT/DLD/quartus/WaveformGenerator.v|
+!i113 1
+R7
+R8
+n@waveform@generator
+vwaveformGenTestBench
+R21
+!i10b 1
+!s100 h19f4Lj6;6L3eJZZiSaIR2
+R1
+II6BhNX_=mRi]N3?Qfzj0@2
+R2
+R3
+w1653730913
+8D:/DLDLAB/Ava_Nesa_DLDLAB3/model/WaveformGenTestBench.v
+FD:/DLDLAB/Ava_Nesa_DLDLAB3/model/WaveformGenTestBench.v
+!i122 207
+L0 2 19
+R5
+r1
+!s85 0
+31
+R22
+!s107 D:/DLDLAB/Ava_Nesa_DLDLAB3/model/WaveformGenTestBench.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/DLDLAB/Ava_Nesa_DLDLAB3/model/WaveformGenTestBench.v|
+!i113 1
+R7
+R8
+nwaveform@gen@test@bench

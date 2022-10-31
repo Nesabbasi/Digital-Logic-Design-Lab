@@ -1,0 +1,153 @@
+|Block2
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+out3 <= out3.DB_MAX_OUTPUT_PORT_TYPE
+BRGCLK => ABRCKT:inst.clk
+ABAUD => ABRCKT:inst.ABAUD
+UxRX => ABRCKT:inst.UxRX
+out2 <= out2.DB_MAX_OUTPUT_PORT_TYPE
+clk => 74193:Counter1.UP
+out7 <= out7.DB_MAX_OUTPUT_PORT_TYPE
+out6 <= out6.DB_MAX_OUTPUT_PORT_TYPE
+out5 <= out5.DB_MAX_OUTPUT_PORT_TYPE
+out4 <= out4.DB_MAX_OUTPUT_PORT_TYPE
+preset => 7408:AND.2
+out8 <= 74193:Counter2.QD
+UxRXIF <= ABRCKT:inst.UxRXIF
+
+
+|Block2|74193:Counter1
+BON <= 28.DB_MAX_OUTPUT_PORT_TYPE
+CLR => 44.IN0
+LDN => 43.IN0
+B => 53.IN2
+A => 52.IN2
+DN => 90.IN0
+UP => 89.IN0
+C => 54.IN2
+D => 55.IN2
+CON <= 27.DB_MAX_OUTPUT_PORT_TYPE
+QD <= 23.DB_MAX_OUTPUT_PORT_TYPE
+QC <= 24.DB_MAX_OUTPUT_PORT_TYPE
+QB <= 25.DB_MAX_OUTPUT_PORT_TYPE
+QA <= 26.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block2|ABRCKT:inst
+clk => clk.IN2
+ABAUD => ABAUD.IN1
+UxRX => UxRX.IN1
+UxRXIF <= Controller:UARTController.port1
+out[0] <= DataPath:UARTDataPath.port0
+out[1] <= DataPath:UARTDataPath.port0
+out[2] <= DataPath:UARTDataPath.port0
+out[3] <= DataPath:UARTDataPath.port0
+out[4] <= DataPath:UARTDataPath.port0
+out[5] <= DataPath:UARTDataPath.port0
+out[6] <= DataPath:UARTDataPath.port0
+out[7] <= DataPath:UARTDataPath.port0
+
+
+|Block2|ABRCKT:inst|Controller:UARTController
+cntRst <= Selector11.DB_MAX_OUTPUT_PORT_TYPE
+UxRXIF <= ldEn.DB_MAX_OUTPUT_PORT_TYPE
+ldEn <= ldEn.DB_MAX_OUTPUT_PORT_TYPE
+cntEn <= WideOr11.DB_MAX_OUTPUT_PORT_TYPE
+clk => ps~1.DATAIN
+ABAUD => Selector1.IN2
+ABAUD => Selector0.IN2
+UxRX => Selector1.IN3
+UxRX => Selector11.IN3
+UxRX => Selector3.IN1
+UxRX => Selector5.IN1
+UxRX => Selector7.IN1
+UxRX => Selector9.IN1
+UxRX => ns.End.DATAB
+UxRX => Selector2.IN1
+UxRX => Selector4.IN1
+UxRX => Selector6.IN1
+UxRX => Selector8.IN1
+UxRX => Selector10.IN1
+
+
+|Block2|ABRCKT:inst|DataPath:UARTDataPath
+register[0] <= register[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+register[1] <= register[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+register[2] <= register[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+register[3] <= register[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+register[4] <= register[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+register[5] <= register[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+register[6] <= register[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+register[7] <= register[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk => register[0]~reg0.CLK
+clk => register[1]~reg0.CLK
+clk => register[2]~reg0.CLK
+clk => register[3]~reg0.CLK
+clk => register[4]~reg0.CLK
+clk => register[5]~reg0.CLK
+clk => register[6]~reg0.CLK
+clk => register[7]~reg0.CLK
+clk => count[0].CLK
+clk => count[1].CLK
+clk => count[2].CLK
+clk => count[3].CLK
+clk => count[4].CLK
+clk => count[5].CLK
+clk => count[6].CLK
+clk => count[7].CLK
+ldEn => register.OUTPUTSELECT
+ldEn => register.OUTPUTSELECT
+ldEn => register.OUTPUTSELECT
+ldEn => register.OUTPUTSELECT
+ldEn => register.OUTPUTSELECT
+ldEn => register.OUTPUTSELECT
+ldEn => register.OUTPUTSELECT
+ldEn => register.OUTPUTSELECT
+cntEn => count.OUTPUTSELECT
+cntEn => count.OUTPUTSELECT
+cntEn => count.OUTPUTSELECT
+cntEn => count.OUTPUTSELECT
+cntEn => count.OUTPUTSELECT
+cntEn => count.OUTPUTSELECT
+cntEn => count.OUTPUTSELECT
+cntEn => count.OUTPUTSELECT
+rst => count.OUTPUTSELECT
+rst => count.OUTPUTSELECT
+rst => count.OUTPUTSELECT
+rst => count.OUTPUTSELECT
+rst => count.OUTPUTSELECT
+rst => count.OUTPUTSELECT
+rst => count.OUTPUTSELECT
+rst => count.OUTPUTSELECT
+rst => register.OUTPUTSELECT
+rst => register.OUTPUTSELECT
+rst => register.OUTPUTSELECT
+rst => register.OUTPUTSELECT
+rst => register.OUTPUTSELECT
+rst => register.OUTPUTSELECT
+rst => register.OUTPUTSELECT
+rst => register.OUTPUTSELECT
+
+
+|Block2|7408:AND
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|Block2|74193:Counter2
+BON <= 28.DB_MAX_OUTPUT_PORT_TYPE
+CLR => 44.IN0
+LDN => 43.IN0
+B => 53.IN2
+A => 52.IN2
+DN => 90.IN0
+UP => 89.IN0
+C => 54.IN2
+D => 55.IN2
+CON <= 27.DB_MAX_OUTPUT_PORT_TYPE
+QD <= 23.DB_MAX_OUTPUT_PORT_TYPE
+QC <= 24.DB_MAX_OUTPUT_PORT_TYPE
+QB <= 25.DB_MAX_OUTPUT_PORT_TYPE
+QA <= 26.DB_MAX_OUTPUT_PORT_TYPE
+
+

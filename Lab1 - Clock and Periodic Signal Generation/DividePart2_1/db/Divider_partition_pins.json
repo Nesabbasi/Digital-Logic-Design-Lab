@@ -1,0 +1,89 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "out",
+					"strict" : false
+				},
+				{
+					"name" : "out1",
+					"strict" : false
+				},
+				{
+					"name" : "out2",
+					"strict" : false
+				},
+				{
+					"name" : "out3",
+					"strict" : false
+				},
+				{
+					"name" : "out4",
+					"strict" : false
+				},
+				{
+					"name" : "out5",
+					"strict" : false
+				},
+				{
+					"name" : "out6",
+					"strict" : false
+				},
+				{
+					"name" : "out7",
+					"strict" : false
+				},
+				{
+					"name" : "out8",
+					"strict" : false
+				},
+				{
+					"name" : "UP",
+					"strict" : false
+				},
+				{
+					"name" : "input7",
+					"strict" : false
+				},
+				{
+					"name" : "input4",
+					"strict" : false
+				},
+				{
+					"name" : "input3",
+					"strict" : false
+				},
+				{
+					"name" : "input2",
+					"strict" : false
+				},
+				{
+					"name" : "input1",
+					"strict" : false
+				},
+				{
+					"name" : "input6",
+					"strict" : false
+				},
+				{
+					"name" : "input5",
+					"strict" : false
+				},
+				{
+					"name" : "input8",
+					"strict" : false
+				},
+				{
+					"name" : "preset",
+					"strict" : false
+				},
+				{
+					"name" : "DN",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,129 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/DLDLAB/Project1
+vDividerPart2_3
+Z0 !s110 1650435042
+!i10b 1
+!s100 oP6fYKkhj4UZP>Xnl0;Ln2
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IF^9l04@V=0e]4fPQcoNbO1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dD:/DLDLAB/Project1/DividerPart2
+Z4 w1650434214
+Z5 8D:/DLDLAB/Project1/DividerPart2/simulation/modelsim/DividerPart2_3.vo
+Z6 FD:/DLDLAB/Project1/DividerPart2/simulation/modelsim/DividerPart2_3.vo
+!i122 31
+L0 32 1286
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1650435042.000000
+!s107 D:/DLDLAB/Project1/DividerPart2/simulation/modelsim/DividerPart2_3.vo|
+Z9 !s90 -reportprogress|300|-work|work|-stats=none|D:/DLDLAB/Project1/DividerPart2/simulation/modelsim/DividerPart2_3.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+n@divider@part2_3
+vDividerPart2_3TB
+R0
+!i10b 1
+!s100 `B[HM8aL?T3aGM746HIcz1
+R1
+I@<Xn7F6S63A_KOhN3ng^Z0
+R2
+R3
+w1650435039
+8D:/DLDLAB/Project1/DividerPart2/DividerPart2_3TB.v
+FD:/DLDLAB/Project1/DividerPart2/DividerPart2_3TB.v
+!i122 30
+Z12 L0 2 14
+R7
+r1
+!s85 0
+31
+R8
+!s107 D:/DLDLAB/Project1/DividerPart2/DividerPart2_3TB.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/DLDLAB/Project1/DividerPart2/DividerPart2_3TB.v|
+!i113 1
+R10
+R11
+n@divider@part2_3@t@b
+vhard_block
+R0
+!i10b 1
+!s100 8<QWD15coh;Kh@]JD4Kn@3
+R1
+I9W1YTFjcL:8]B=bQk05G13
+R2
+R3
+R4
+R5
+R6
+!i122 31
+L0 1319 34
+R7
+r1
+!s85 0
+31
+R8
+Z13 !s107 D:/DLDLAB/Project1/DividerPart2/simulation/modelsim/DividerPart2_3.vo|
+R9
+!i113 1
+R10
+R11
+voscillator
+R0
+!i10b 1
+!s100 IBE^[nACbN4[Z`YneSWHl2
+R1
+I:CP4gEkBi9Cin::OL_90E3
+R2
+R3
+w1650109308
+8D:/DLDLAB/Project1/Oscillator.v
+FD:/DLDLAB/Project1/Oscillator.v
+!i122 28
+R12
+R7
+r1
+!s85 0
+31
+R8
+!s107 D:/DLDLAB/Project1/Oscillator.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/DLDLAB/Project1/Oscillator.v|
+!i113 1
+R10
+R11
+voscillatorTB
+R0
+!i10b 1
+!s100 0<zlAb=9a97DYThSo=3:V1
+R1
+Iclbhn`:kjP3CKf]<DFNZo1
+R2
+R3
+w1650109322
+8D:/DLDLAB/Project1/OscillatorTB.v
+FD:/DLDLAB/Project1/OscillatorTB.v
+!i122 29
+L0 2 11
+R7
+r1
+!s85 0
+31
+R8
+!s107 D:/DLDLAB/Project1/OscillatorTB.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/DLDLAB/Project1/OscillatorTB.v|
+!i113 1
+R10
+R11
+noscillator@t@b
